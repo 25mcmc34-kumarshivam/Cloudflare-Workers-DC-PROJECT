@@ -1,0 +1,10 @@
+test_01_status_lists_two_healthy_nodes (test_system.EdgeFlowIntegrationTests.test_01_status_lists_two_healthy_nodes) ... ok
+test_02_cache_changes_from_miss_to_hit (test_system.EdgeFlowIntegrationTests.test_02_cache_changes_from_miss_to_hit) ... ok
+test_03_dispatcher_routes_to_an_edge (test_system.EdgeFlowIntegrationTests.test_03_dispatcher_routes_to_an_edge) ... ok
+test_04_failover_after_edge_shutdown (test_system.EdgeFlowIntegrationTests.test_04_failover_after_edge_shutdown) ... ok
+test_05_missing_resource_returns_error (test_system.EdgeFlowIntegrationTests.test_05_missing_resource_returns_error) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.400s
+
+OK

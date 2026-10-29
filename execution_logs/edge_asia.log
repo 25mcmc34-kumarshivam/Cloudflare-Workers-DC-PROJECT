@@ -1,0 +1,4 @@
+21:35:00 edge-asia listening on 127.0.0.1:8802 origin=127.0.0.1:8900 ttl=30.0s
+21:35:00 edge-asia GET /intro cache=MISS
+21:35:01 edge-asia GET /architecture cache=MISS
+21:35:02 edge-asia GET /missing cache=N/A

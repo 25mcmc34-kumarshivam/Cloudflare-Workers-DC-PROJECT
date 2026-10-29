@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.pptx-build/
+.codex-finalizer/
+qa/
+evidence_pages/
+submission_package/
+build_documents.py
+build_presentation.mjs
+*.tmp
+~$*.docx
+~$*.pptx
+

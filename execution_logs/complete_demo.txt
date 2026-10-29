@@ -1,0 +1,141 @@
+EDGEFLOW SIMULATOR - COMPLETE DEMONSTRATION
+Student: Kumar Shivam   Registration: 25MCMC34
+Services ready: dispatcher=8800, edges=8801/8802, origin=8900
+
+[1 DISTRIBUTED STATUS]
+{
+  "nodes": [
+    {
+      "healthy": true,
+      "host": "127.0.0.1",
+      "name": "edge-india",
+      "port": 8801
+    },
+    {
+      "healthy": true,
+      "host": "127.0.0.1",
+      "name": "edge-asia",
+      "port": 8802
+    }
+  ],
+  "ok": true
+}
+
+[2 FIRST REQUEST CACHE MISS]
+{
+  "cache": "MISS",
+  "cache_age_ms": 0,
+  "cached_at": 1793289900.4860816,
+  "content": "Cloudflare Workers runs application code on distributed edge locations.",
+  "dispatcher": "edge-dispatcher",
+  "generated_at": 1793289900.606,
+  "ok": true,
+  "resource": "/intro",
+  "routing_attempts": [
+    {
+      "node": "edge-india",
+      "result": "served"
+    }
+  ],
+  "served_by": "edge-india",
+  "version": 1
+}
+
+[3 SECOND EDGE CACHE MISS]
+{
+  "cache": "MISS",
+  "cache_age_ms": 0,
+  "cached_at": 1793289900.662304,
+  "content": "Cloudflare Workers runs application code on distributed edge locations.",
+  "dispatcher": "edge-dispatcher",
+  "generated_at": 1793289900.796,
+  "ok": true,
+  "resource": "/intro",
+  "routing_attempts": [
+    {
+      "node": "edge-asia",
+      "result": "served"
+    }
+  ],
+  "served_by": "edge-asia",
+  "version": 1
+}
+
+[4 REPEATED REQUEST CACHE HIT]
+{
+  "cache": "HIT",
+  "cache_age_ms": 394,
+  "cached_at": 1793289900.4860816,
+  "content": "Cloudflare Workers runs application code on distributed edge locations.",
+  "dispatcher": "edge-dispatcher",
+  "generated_at": 1793289900.606,
+  "ok": true,
+  "resource": "/intro",
+  "routing_attempts": [
+    {
+      "node": "edge-india",
+      "result": "served"
+    }
+  ],
+  "served_by": "edge-india",
+  "version": 1
+}
+
+[5 STATUS AFTER EDGE FAILURE]
+{
+  "nodes": [
+    {
+      "healthy": false,
+      "host": "127.0.0.1",
+      "name": "edge-india",
+      "port": 8801
+    },
+    {
+      "healthy": true,
+      "host": "127.0.0.1",
+      "name": "edge-asia",
+      "port": 8802
+    }
+  ],
+  "ok": true
+}
+
+[6 FAILOVER REQUEST]
+{
+  "cache": "MISS",
+  "cache_age_ms": 0,
+  "cached_at": 1793289901.8633735,
+  "content": "Client requests pass through routing, edge compute, cache, and an origin service.",
+  "dispatcher": "edge-dispatcher",
+  "generated_at": 1793289901.959,
+  "ok": true,
+  "resource": "/architecture",
+  "routing_attempts": [
+    {
+      "node": "edge-asia",
+      "result": "served"
+    }
+  ],
+  "served_by": "edge-asia",
+  "version": 1
+}
+
+[7 UNKNOWN RESOURCE]
+{
+  "dispatcher": "edge-dispatcher",
+  "error": "not_found",
+  "message": "resource '/missing' was not found",
+  "ok": false,
+  "routing_attempts": [
+    {
+      "node": "edge-india",
+      "result": "health_check_failed"
+    },
+    {
+      "node": "edge-asia",
+      "result": "served"
+    }
+  ]
+}
+
+DEMO RESULT: PASS - cache, routing, health checks, and failover were exercised.

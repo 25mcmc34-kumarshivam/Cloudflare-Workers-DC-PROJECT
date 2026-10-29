@@ -1,0 +1,7 @@
+21:35:00 DISPATCHER listening on 127.0.0.1:8800 nodes=edge-india,edge-asia
+21:35:00 DISPATCHER GET /intro served_by=edge-india cache=MISS
+21:35:00 DISPATCHER GET /intro served_by=edge-asia cache=MISS
+21:35:00 DISPATCHER GET /intro served_by=edge-india cache=HIT
+21:35:01 DISPATCHER GET /architecture served_by=edge-asia cache=MISS
+21:35:02 DISPATCHER health check failed for edge-india
+21:35:02 DISPATCHER GET /missing served_by=None cache=None

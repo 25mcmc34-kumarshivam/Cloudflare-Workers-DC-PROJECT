@@ -1,0 +1,4 @@
+21:35:00 ORIGIN listening on 127.0.0.1:8900
+21:35:00 ORIGIN GET /intro version=1
+21:35:00 ORIGIN GET /intro version=1
+21:35:01 ORIGIN GET /architecture version=1
