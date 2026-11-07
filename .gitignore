@@ -5,6 +5,9 @@ node_modules/
 .pptx-build/
 .codex-finalizer/
 qa/
+qa_real_tutorial_v2/
+update_tutorial_real_screenshots.py
+submission_raw*.zip
 evidence_pages/
 submission_package/
 build_documents.py
