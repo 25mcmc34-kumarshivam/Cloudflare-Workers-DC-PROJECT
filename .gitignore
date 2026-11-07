@@ -7,6 +7,7 @@ node_modules/
 qa/
 qa_real_tutorial_v2/
 update_tutorial_real_screenshots.py
+append_test_evidence.py
 submission_raw*.zip
 evidence_pages/
 submission_package/
