@@ -8,6 +8,12 @@ qa/
 qa_real_tutorial_v2/
 update_tutorial_real_screenshots.py
 append_test_evidence.py
+repair_tutorial_personal_voice.py
+personalize_all_docs.py
+inspect_docs_text.py
+qa_media/
+qa_tutorial_personal/
+qa_tutorial_regenerated/
 submission_raw*.zip
 evidence_pages/
 submission_package/
