@@ -10,10 +10,12 @@ update_tutorial_real_screenshots.py
 append_test_evidence.py
 repair_tutorial_personal_voice.py
 personalize_all_docs.py
+embed_real_evidence_all_docs.py
 inspect_docs_text.py
 qa_media/
 qa_tutorial_personal/
 qa_tutorial_regenerated/
+qa_all_docs_final/
 submission_raw*.zip
 evidence_pages/
 submission_package/
