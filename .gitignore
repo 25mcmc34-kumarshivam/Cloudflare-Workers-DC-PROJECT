@@ -11,6 +11,7 @@ append_test_evidence.py
 submission_raw*.zip
 evidence_pages/
 submission_package/
+submission_minimal/
 build_documents.py
 build_presentation.mjs
 *.tmp
